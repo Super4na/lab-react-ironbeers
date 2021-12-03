@@ -1,5 +1,38 @@
 .App {
   margin-left: 22vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* unvisited link */
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+/* selected link */
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+h2 {
+  color: grey;
+}
+
+NavLink {
+  text-decoration: none;
 }
 
 .text {
@@ -9,7 +42,46 @@
 }
 
 .beer {
-  padding-left: 23vw;
+  border-bottom: 1px solid gray;
+  padding-top: 5vh;
+  display: flex;
+  width: 45vw;
+  height: 40vh;
+  padding-left: 10vw;
+}
+
+#beerImg {
+  padding-left: 25vw;
+}
+.beerInfo {
+  margin-left: 2vw;
+  max-width: 30vw;
+}
+
+.nuBeer {
+  max-width: 60vw;
+  margin-left: 12vw;
+}
+
+input {
+  width: 35vw;
+  height: 4vh;
+  border: 1px solid grey;
+  border-radius: 20px;
+}
+
+.createNewButton {
+  border-radius: 20px;
+  margin-top: 2vh;
+  color: white;
+  width: 35vw;
+  height: 5vh;
+  border: 1px solid rgb(62, 201, 236);
+  background-color: rgb(62, 201, 236);
+}
+
+#descriptionInput {
+  height: 10vh;
 }
 
 .pageTitle {

@@ -40,51 +40,66 @@ function NewBeer() {
   return (
     <>
       <Header />
-      <div class="form">
-        <form onSubmit={handleFormSubmit}></form>
-        <label>Name</label>
-        <input
-          type="text"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
-        <label>Tagline</label>
-        <input
-          type="text"
-          value={tagline}
-          onChange={(e) => setTagline(e.target.value)}
-        />
-        <label>Description</label>
-        <input
-          type="text"
-          value={description}
-          onChange={(e) => setDescription(e.target.value)}
-        />
-        <label>First Brewed</label>
-        <input
-          type="text"
-          value={first_brewed}
-          onChange={(e) => setFirst_brewed(e.target.value)}
-        />
-        <label>Brewers Tips</label>
-        <input
-          type="text"
-          value={brewers_tip}
-          onChange={(e) => setBrewers_tip(e.target.value)}
-        />
-        <label>Attenuation Level</label>
-        <input
-          type="number"
-          value={attenuation_level}
-          onChange={(e) => setAttenuation_level(e.target.value)}
-        />
-        <label>Contributer By</label>
-        <input
-          type="text"
-          value={contributed_by}
-          onChange={(e) => setContributed_by(e.target.value)}
-        />
-        <button type="submit">Add New</button>
+      <div class="nuBeer">
+        <form onSubmit={handleFormSubmit}>
+          <label>Name</label>
+          <br />
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          <br />
+          <label>Tagline</label>
+          <br />
+          <input
+            type="text"
+            value={tagline}
+            onChange={(e) => setTagline(e.target.value)}
+          />
+          <br />
+          <label>Description</label>
+          <br />
+          <input id="descriptionInput"
+            type="text"
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
+          />
+          <br />
+          <label>First Brewed</label>
+          <br />
+          <input
+            type="text"
+            value={first_brewed}
+            onChange={(e) => setFirst_brewed(e.target.value)}
+          />
+          <br />
+          <label>Brewers Tips</label>
+          <br />
+          <input
+            type="text"
+            value={brewers_tip}
+            onChange={(e) => setBrewers_tip(e.target.value)}
+          />
+          <br />
+          <label>Attenuation Level</label>
+          <br />
+          <input
+            type="number"
+            value={attenuation_level}
+            onChange={(e) => setAttenuation_level(e.target.value)}
+          />
+          <br />
+          <label>Contributer By</label>
+          <br />
+          <input
+            type="text"
+            value={contributed_by}
+            onChange={(e) => setContributed_by(e.target.value)}
+          />
+          <br />
+          <button class="createNewButton" type="submit">Add New</button>
+        </form>
       </div>
     </>
   );

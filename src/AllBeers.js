@@ -18,20 +18,25 @@ function AllBeers() {
   return (
     <>
       <Header />
-      <div class="beer">
-        {beers.map((beer) => {
-          return (
-            <>
-              <img src={beer.image_url} alt={beer.name} height="200px" />
-              <NavLink to={`/beers/${beer._id}`}>
-                <h3>{beer.name}</h3>
-              </NavLink>
-              <p>{beer.tagline}</p>
-              <p>Created by: {beer.contributed_by}</p>
-            </>
-          );
-        })}
-      </div>
+
+      {beers.map((beer) => {
+        return (
+          <>
+            <div class="beer">
+              <div class="imgBeer">
+                <img src={beer.image_url} alt={beer.name} height="200px" />
+              </div>
+              <div class="beerInfo">
+                <NavLink to={`/beers/${beer._id}`}>
+                  <h1>{beer.name}</h1>
+                </NavLink>
+                <h2>{beer.tagline}</h2>
+                <p>Created by: {beer.contributed_by}</p>
+              </div>
+            </div>
+          </>
+        );
+      })}
     </>
   );
 }

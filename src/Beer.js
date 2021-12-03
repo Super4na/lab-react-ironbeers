@@ -22,15 +22,25 @@ function Beer(props) {
     <>
       <Header />
       <div class="beerDeets">
-        <img src={beer.image_url} alt={beer.name} />
-        <h1>{beer.name}</h1>
-        <h2>{beer.tagline}</h2>
-        <p>{beer.attenuation_level}</p>
-        <p>First Brewed: {beer.first_brewed}</p>
-        <div class="text">
-          <p>{beer.description}</p>
+        <div class="beerDetail">
+          <br />
+          <img
+            id="beerImg"
+            src={beer.image_url}
+            alt={beer.name}
+            height="250px"
+          />
+          <div class="beerDescription">
+            <h1>{beer.name}</h1>
+            <h2>{beer.tagline}</h2>
+            <p>{beer.attenuation_level}</p>
+            <p>First Brewed: {beer.first_brewed}</p>
+            <div class="text">
+              <p>{beer.description}</p>
+            </div>
+            <p>{beer.contributed_by}</p>
+          </div>
         </div>
-        <p>{beer.contributed_by}</p>
       </div>
     </>
   );
