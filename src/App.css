@@ -64,10 +64,17 @@ NavLink {
 }
 
 input {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
   width: 35vw;
   height: 4vh;
   border: 1px solid grey;
   border-radius: 20px;
+}
+
+label {
+  padding-top: 2vh;
+  text-decoration: black;
 }
 
 .createNewButton {
